@@ -5,7 +5,7 @@ class PostsController < ApplicationController
     end
 
     def create
-        @new_post = Post.new(post_params) #CREATE CHYBA MUSI BYC ZAWSZE JESLI JEST CLASS.NEW I PARAMS I SUBMIT
+        @new_post = Post.new(post_params)
         @new_post.save
 
         redirect_to root_path
